@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Mohd Faheem</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mohd Faheem</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+     <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Mohd Faheem profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mohd Faheem</h1>
+        <p class="section__text__p2">Mechanical Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mohd-faheem-39a3992b6/'"
+          />
+          
+        </div>
+      </div>
+     </section>
+     <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Diploma in Mech. Eng.<br />B.Tech. in Mech. Eng.</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Motivated and detail-oriented 4th year Mechanical Engineering student with an good academic background and practical expertise in
+             every aspect of mechanical design and analysis. Capable of using engineering software such as AutoCAD, Creo Parametric, and ANSYS
+             for modeling, simulation, and prototyping. Excellent team member with good communication skills, keen to contribute to hard projects and
+              make a significant contribution in mechanical engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+      <section id="projects" style="padding-top: 60px;">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- Project 1: Computational Fluid Dynamics of Solar Air Heater -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.jpg"
+                  alt="Study on some aspects of Computational Fluid Dynamics of Solar Air Heater"
+                  class="project-img"
+                  style="width: 300px; height: auto;"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Study on some aspects of Computational Fluid Dynamics of Solar Air Heater
+              </h2>
+              <p>
+                Studying computational methods for solar air heaters involves exploring various aspects related to the design, optimization, and performance evaluation of these systems. This study includes detailed simulations and analyses.
+              </p>
+              <p>
+                <strong>Technologies Used:</strong> Computational Fluid Dynamics, Simulation Software
+              </p>
+            </div>
+      
+            <!-- Project 2: A Comprehensive Review of 4D Bio-Printing -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.jpg"
+                  alt="A Comprehensive Review of 4D Bio-Printing"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                A Comprehensive Review of 4D Bio-Printing
+              </h2>
+              <p>
+                A comprehensive review on 4D Bio-printing would encompass various aspects of this emerging field, combining the principles of 3D Bioprinting with the added dimension of time, enabling printed structures to change shape or function over time in response to external stimuli.
+              </p>
+              <p>
+                <strong>Technologies Used:</strong> 4D Bio-Printing Techniques, Material Science
+              </p>
+            </div>
+      
+            <!-- Project 3: Electric Vehicle Development -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.jpg"
+                  alt="Working Project about Electric Vehicle"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Working Project about Electric Vehicle
+              </h2>
+              <p>
+                Collaborated with two teammates on the development of an electric vehicle, showcasing teamwork, technical expertise, and project management skills. This project highlights innovation in sustainable transportation.
+              </p>
+              <p>
+                <strong>Technologies Used:</strong> Electric Vehicle Design, Battery Management Systems, Motor Controllers
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+      <section id="certifications">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+      
+            <!-- Certification 1: Certificate of Completion -->
+            <div class="details-container color-container">
+              <img src="./assets/certificate.png" alt="Certificate 7" class="certification-img" style="width: 50px; height: auto;">
+              <h2 class="experience-sub-title project-title">Certificate of Completion</h2>
+              <p>For successfully completing the course on “Rocket Propulsion and Spacecraft Dynamics” conducted by KODACY, an official space tutor of Indian Space Research Organisation (ISRO) (3rd April 2024)</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/cert1.jpg')">View Certificate</button>
+              </div>
+            </div>
+      
+            <!-- Certification 5: Certificate of Completion -->
+            <div class="details-container color-container">
+              <img src="./assets/certificate.png" alt="Certificate 7" class="certification-img" style="width: 50px; height: auto;">
+              <h2 class="experience-sub-title project-title">Certificate of Completion</h2>
+              <p>For successfully completing the course on “CAM and Design Manufacturing for Mechanical Engineers with Autodesk Fusion 360” from Coursera</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/cert2.jpg')">View Certificate</button>
+              </div>
+            </div>
+      
+            <!-- Certification 6: Certificate of Completion -->
+            <div class="details-container color-container">
+              <img src="./assets/certificate.png" alt="Certificate 7" class="certification-img" style="width: 50px; height: auto;">
+              <h2 class="experience-sub-title project-title">Certificate of Completion</h2>
+              <p>For successfully completing the course on “Introduction to Mechanical Engineering Design and Manufacturing with Fusion 360” from Coursera</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/cert3.jpg')">View Certificate</button>
+              </div>
+            </div>
+      
+            <!-- Certification 7: Certificate of Completion -->
+            <div class="details-container color-container">
+              <img src="./assets/certificate.png" alt="Certificate 7" class="certification-img" style="width: 50px; height: auto;">
+              <h2 class="experience-sub-title project-title">Certificate of Completion</h2>
+              <p>For successfully completing the course on “Introduction to Thermodynamics: Transferring Energy from Here to There” from Coursera, University of Michigan</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/cert4.jpg')">View Certificate</button>
+              </div>
+            </div>
+      
+            <!-- Certification 2 -->
+            <div class="details-container color-container">
+              <img src="./assets/certificate.png" alt="Certificate 7" class="certification-img" style="width: 50px; height: auto;">
+              <h2 class="experience-sub-title project-title">Certificate of Participation</h2>
+              <p>OMSPACE ROCKET AND EXPLORATION PVT LTD for successfully completing “YOUNGSPACE ROCKET-ED PROGRAM” 2-Day workshop on Rocket Science (19th & 20th June 2021)</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/cert5.jpg')">View Certificate</button>
+              </div>
+            </div>
+      
+            <!-- Certification 3 -->
+            <div class="details-container color-container">
+              <img src="./assets/certificate.png" alt="Certificate 7" class="certification-img" style="width: 50px; height: auto;">
+              <h2 class="experience-sub-title project-title">Certificate of Participation</h2>
+              <p>OMSPACE ROCKET AND EXPLORATION PVT LTD for successfully completing: “INTRODUCTION TO COMBUSTION“, “ROCKET MODELLING WITH OPEN ROCKET“, “ALL ABOUT MARS“ (23rd & 24th May 2021)</p>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/cert6.jpg')">View Certificate</button>
+              </div>
+            </div>
+      
+           
+      
+          </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      </section>
+      
+      
+      
+     <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:fmfaheem698@gmail.com">fmfaheem698@gmail.com@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://www.linkedin.com/in/mohd-faheem-39a3992b6">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mohd Faheem. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
